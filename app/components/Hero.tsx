@@ -1,50 +1,53 @@
-
 import {
   Box,
   Heading,
   Container,
   Text,
-  Button,
   Stack,
-  Icon,
-  useColorModeValue,
   createIcon,
   Image,
-} from '@chakra-ui/react';
-import Technologies from './Technologies';
-import BradleyImage from './IM.png'
+} from "@chakra-ui/react";
+import Technologies from "./Technologies";
+import BradleyImage from "./IM.png";
 export default function Hero() {
   return (
     <>
-      <Container maxW={'3xl'}>
+      <Container maxW={"3xl"}>
         <Stack
           as={Box}
-          textAlign={'center'}
+          textAlign={"center"}
           spacing={{ base: 8, md: 14 }}
-          py={{ base: 20, md: 36 }}>
-            <Image width={'140px'} marginRight={'auto'} marginLeft={'auto'} borderRadius='3xl' src={BradleyImage} />
+          py={{ base: 20, md: 36 }}
+        >
+          <Image
+            width={"140px"}
+            marginRight={"auto"}
+            marginLeft={"auto"}
+            borderRadius="3xl"
+            src={BradleyImage}
+          />
           <Heading
             fontWeight={600}
-            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-            lineHeight={'110%'}>
+            fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
+            lineHeight={"110%"}
+          >
             Bradley Leftley <br />
-            <Text as={'span'} color={'#1c86bf'}>
-             Techincal Lead
+            <Text as={"span"} color={"#1c86bf"}>
+              Techincal Lead
             </Text>
-
           </Heading>
-          <Text color={'gray.500'}>
-          Front end Tech with experience of AWS, Web and UX. Currently Tech Lead of the Analytics team of Smart Pension in United Kingdom.
-
-
+          <Text color={"gray.500"}>
+            Front end Tech with experience of AWS, Web and UX. Currently Tech
+            Lead of the Analytics team of Smart Pension in United Kingdom.
           </Text>
           <Stack
-            direction={'column'}
+            direction={"column"}
             spacing={3}
-            align={'center'}
-            alignSelf={'center'}
-            position={'relative'}>
-                <Technologies />
+            align={"center"}
+            alignSelf={"center"}
+            position={"relative"}
+          >
+            <Technologies />
           </Stack>
         </Stack>
       </Container>
@@ -53,8 +56,8 @@ export default function Hero() {
 }
 
 const Arrow = createIcon({
-  displayName: 'Arrow',
-  viewBox: '0 0 72 24',
+  displayName: "Arrow",
+  viewBox: "0 0 72 24",
   path: (
     <path
       fillRule="evenodd"
