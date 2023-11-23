@@ -12,7 +12,7 @@ import {
   Image,
 } from '@chakra-ui/react';
 import Technologies from './Technologies';
-
+import BradleyImage from './IM.png'
 export default function Hero() {
   return (
     <>
@@ -22,7 +22,7 @@ export default function Hero() {
           textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
           py={{ base: 20, md: 36 }}>
-            <Image width={'140px'} marginRight={'auto'} marginLeft={'auto'} borderRadius='3xl' src='https://media.licdn.com/dms/image/D5603AQEaRKSKsH85IA/profile-displayphoto-shrink_800_800/0/1678555587112?e=1684368000&v=beta&t=SeNuZw_8ByERQ9qkE5GHx-TFZgFC3f-hA5G69C7OS9I' />
+            <Image width={'140px'} marginRight={'auto'} marginLeft={'auto'} borderRadius='3xl' src={BradleyImage} />
           <Heading
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
