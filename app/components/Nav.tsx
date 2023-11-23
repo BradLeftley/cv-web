@@ -36,9 +36,9 @@ export default function Nav() {
           <Box color={"white"}></Box>
 
           <Flex alignItems={"center"}>
-            <Flex color={"white"} spacing="4" marginRight="3">
+            {/* <Flex color={"white"} spacing="4" marginRight="3">
               <Link to="/photos">Photos</Link>
-            </Flex>
+            </Flex> */}
             <Stack direction={"row"} spacing={7}>
               <Button onClick={toggleColorMode}>
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}

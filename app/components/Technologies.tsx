@@ -21,10 +21,10 @@ import {
                       <GridItem w="100%">
             <Flex flexDirection={'column'}>
               <Text fontSize={'xl'} fontWeight={'bold'}>
-              Web Frameworks
+              Frameworks
               </Text>
               <Box fontSize={'sm'}>
-              React, Typescript, Ember.js, Node.js, Express.js, D3.js, Apollo GraphQL, Type Graphql
+              React, Typescript, Ember.js, Node.js, Express.js, D3.js, Cube.js, Apollo GraphQL, Type Graphql
               </Box>
             </Flex>
           </GridItem>
@@ -84,7 +84,7 @@ import {
               Testing
               </Text>
               <Box fontSize={'sm'}>
-              Cypress, React Testing Library and Chromatic.
+              Cypress, Playwright, React Testing Library and Chromatic.
               </Box>
             </Flex>
           </GridItem>
@@ -98,6 +98,17 @@ import {
               </Box>
             </Flex>
           </GridItem>
+          <GridItem w="100%">
+            <Flex flexDirection={'column'}>
+              <Text fontSize={'xl'} fontWeight={'bold'}>
+              Mobile
+              </Text>
+              <Box fontSize={'sm'}>
+              IOS
+              </Box>
+            </Flex>
+          </GridItem>
+          
         </Grid>
       </Container>
     );

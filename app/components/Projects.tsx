@@ -54,14 +54,17 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
             {description}
           </Text>
         </Box>
-        <Button
-          variant={"link"}
-          onClick={() => window.open(href, "_blank")}
-          colorScheme={"blue"}
-          size={"sm"}
-        >
-          Learn more
-        </Button>
+
+        {href && (
+          <Button
+            variant={"link"}
+            onClick={() => window.open(href, "_blank")}
+            colorScheme={"blue"}
+            size={"sm"}
+          >
+            Learn more
+          </Button>
+        )}
       </Stack>
     </Box>
   );
@@ -86,9 +89,9 @@ export default function Projects() {
             heading={"Bin Finder App"}
             icon={<Icon as={FcEmptyTrash} w={10} h={10} />}
             description={
-              "App which maps out recycling bins around UK / Denmark. Build using React, Amplify, Mapbox and DynamoDB."
+              "App which maps out recycling bins around UK / Denmark. Build using React, Amplify, Mapbox and DynamoDB. (API currently Down)"
             }
-            href={"https://bin-finder.com"}
+            href={"https://bin-finder.bradleyleftley.co.uk"}
           />
           <Card
             heading={"Crypto Dashboard"}
@@ -112,16 +115,15 @@ export default function Projects() {
             description={
               "Tank monitoring system which uses a raspberry PI and temp sensors to report dasily tempatures to slack."
             }
-            href={""}
           />
-          <Card
+          {/* <Card
             heading={"Heading"}
             icon={<Icon as={FcAbout} w={10} h={10} />}
             description={
               "Lorem ipsum dolor sit amet catetur, adipisicing elit."
             }
             href={"#"}
-          />
+          /> */}
         </Flex>
         <Divider mt={12} mb={12} />
       </Container>

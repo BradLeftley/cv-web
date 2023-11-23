@@ -11,6 +11,8 @@ import {
   Heading,
   Stack,
   Link,
+  UnorderedList,
+  ListItem,
   Container,
 } from "@chakra-ui/react";
 import {} from "@chakra-ui/react";
@@ -72,15 +74,29 @@ export default function Experience() {
           </GridItem>
           <GridItem>
             <Flex>
-              <chakra.p>
-                Tech Lead for the Client Analytics team, which involves leading
-                a team of frontend and backend developers to build an extensive
-                application using React, Remix, Graphql, Lambda, Node.js,
-                Cube.js and Snowflake to enable 9000+ advisers & 77,000+
-                companies to conduct their own analytics on company KPIs,
-                contributions, investments & members, as well as enable
-                charting, table & download functionalities.
-              </chakra.p>
+            <UnorderedList>
+      <ListItem>
+        Led a team of frontend and backend developers in building an extensive application.
+      </ListItem>
+      <ListItem>
+        Utilized technologies including React, Remix, GraphQL, Lambda, Node.js, Cube.js, and Snowflake.
+      </ListItem>
+      <ListItem>
+        Enabled 9000+ advisers & 77,000+ companies to conduct analytics on company KPIs, contributions, investments & members.
+      </ListItem>
+      <ListItem>
+        Implemented functionalities for charting, table views, and download capabilities.
+      </ListItem>
+      <ListItem>
+        Played a key role in providing a platform for self-service analytics to the user base.
+      </ListItem>
+      <ListItem>
+        Demonstrated expertise in overseeing the development lifecycle and ensuring high-quality deliverables.
+      </ListItem>
+      <ListItem>
+        Fostered collaboration between frontend and backend teams to achieve project goals.
+      </ListItem>
+    </UnorderedList>
             </Flex>
           </GridItem>
         </Grid>
