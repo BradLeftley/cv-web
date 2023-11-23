@@ -11,7 +11,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import Technologies from "./Technologies";
-import im from "./IMG_9925-min.jpg";
+import im from "./IM.png";
 export default function Hero() {
   return (
     <>
